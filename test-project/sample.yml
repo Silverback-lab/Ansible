@@ -1,0 +1,24 @@
+- name: "Adds line to file"
+  hosts: target-host
+  tasks:
+        -linieinfile:
+                path: ~/deleteme.txt
+                line: 'Hey you did it'
+
+
+
+
+- name: "playbook test"
+  hosts: target_host
+  tasks:
+          - name: creates_file
+            command: touch deleteme.txt chdir=~
+
+
+
+            - name: Remove test file
+  hosts: target_host
+  tasks:
+          - name: remove file
+            command: rm test.txt chdir=~
+~
