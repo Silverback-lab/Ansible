@@ -1,0 +1,11 @@
+- name: "command1"
+  hosts: target
+  tasks:
+          - name: command1
+            shell: cd /etc/yum.repos.d/ && sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
+
+- name: "command2"
+  hosts: target
+  tasks:
+          - name: command2
+            shell: cd /etc/yum.repos.d/ && sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
