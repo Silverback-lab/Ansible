@@ -1,5 +1,5 @@
 - name: Remove test file
-  hosts: target_host
+  hosts: target
   tasks:
           - name: remove file
             command: rm test.txt chdir=~

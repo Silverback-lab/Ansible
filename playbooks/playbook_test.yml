@@ -1,5 +1,5 @@
 - name: "playbook test"
-  hosts: target_host
+  hosts: target
   tasks:
           - name: creates_file
             command: touch test.txt chdir=~
