@@ -1,0 +1,13 @@
+- name: "playbook test"
+  hosts: target_host
+  tasks:
+          - name: creates_file
+            command: touch test.txt chdir=~
+
+
+- name: "test adding line"
+  hosts: target_host
+  tasks:
+          - lineinfile:
+                  path: ~/test.txt
+                  line: 'Hey you did it'

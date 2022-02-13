@@ -1,0 +1,8 @@
+---
+- name: Install NGINX
+  hosts: target_host
+  tasks:
+          - name: Install NGINX
+            yum:
+                    name: nginx
+                    state: present
