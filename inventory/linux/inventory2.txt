@@ -1,6 +1,0 @@
-[target]
-ansible-target2.localdomain
-
-[target:vars]
-ansible_user = osboxes
-ansible_ssh_pass = osboxes.org
