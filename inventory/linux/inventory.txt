@@ -1,4 +1,4 @@
-[target_host:children]
+[target:children]
 centos
 ubuntu
 
