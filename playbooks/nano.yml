@@ -1,6 +1,7 @@
 ---
   - name: iluvnano
     hosts: target
+    become: yes
     tasks:
       - name: ensure annao is there and updated
         yum:
