@@ -3,7 +3,7 @@
     hosts: target
     become: yes
     tasks:
-      - name: ensure annao is there and updated
+      - name: ensure nano is there and updated
         yum:
           name: nano
           state: latest
