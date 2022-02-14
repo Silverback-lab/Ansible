@@ -1,0 +1,8 @@
+---
+  - name: iluvnano
+    hosts: target
+    tasks:
+      - name: ensure annao is there and updated
+        yum:
+          name: nano
+          state: latest
